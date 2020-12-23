@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* inherit 부모로 부터 글자색 상속 */
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  padding: 40px 50px;
+  z-index: 10;
+  /* z-index 레이어 개념 */
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  display: inline-block;
+  width: 100px;
+  height: 40ps;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav a.active,
+.nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.logo {
+  width: 130px;
+}
+
+/* silde */
+.silde {
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(82, 77, 55, 0.415) -5.11%,
+      rgba(143, 140, 110, 0) 98.72%
+    ),
+    url("./images/slide_01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* 백그라운드 중앙 */
+  background-size: cover;
+  /* 백그라운드 사이즈 변동해도 중앙 */
+  position: relative;
+}
+
+.silde-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.silde-text h2 {
+  font-size: 84px;
+  margin-bottom: 36px;
+  font-weight: 700;
+}
+
+.silde-text p {
+  opacity: 60%;
+}
+
+.secial {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.secial a {
+  display: block;
+  width: 40px;
+  margin: 30px 0;
+  opacity: 60%;
+  transition: opacity 0.3s;
+}
+
+.secial a:hover {
+  opacity: 100%;
+}

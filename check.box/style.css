@@ -1,0 +1,34 @@
+div {
+  padding: 10px 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  height: 20px;
+  background: url("./check_img.png") no-repeat 0 0;
+  background-size: 20px 40px;
+  padding-left: 30px;
+}
+
+input[type="checkbox"]:checked + label {
+  background-position: 0 -20px;
+}
+
+/* 가로 1000px 이하  큰 숫자부터*/
+@media (max-width: 1000px) {
+  div {
+    padding: 0;
+  }
+}
+
+/* 가로 1000px 이상 작은 숫자부터 */
+@media (min-width: 960px) {
+  div {
+    padding: 10px 0;
+    background: orange;
+  }
+}
